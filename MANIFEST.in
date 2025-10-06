@@ -1,0 +1,39 @@
+# Include important files
+include README.md
+include LICENSE
+include requirements.txt
+include CHANGELOG.md
+include config_example.json
+include config_example.yaml
+
+# Include example files
+include example.py
+include example_config.py
+include example_websocket.py
+
+# Include all Python files in iotkit package
+recursive-include iotkit *.py
+
+# Exclude development and test files
+exclude test_*.py
+exclude *_test.py
+exclude debug.py
+exclude temp.py
+exclude playground.py
+recursive-exclude tests *
+recursive-exclude .qodo *
+
+# Exclude compiled files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude __pycache__
+global-exclude .DS_Store
+
+# Exclude logs and data files
+global-exclude *.log
+exclude sensor_log.*
+exclude batch_data.*
+exclude greenhouse_data.*
+exclude websocket_sensor_data.*
+recursive-exclude logs *
+recursive-exclude data *

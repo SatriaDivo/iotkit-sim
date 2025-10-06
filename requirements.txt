@@ -1,0 +1,21 @@
+# IoTKit Requirements
+
+# Core dependencies
+paho-mqtt>=1.6.0
+requests>=2.25.0
+PyYAML>=6.0
+websockets>=11.0
+
+# Optional dependencies for development
+# Install with: pip install -r requirements.txt
+
+# Development tools (optional)
+# pytest>=6.0
+# pytest-cov>=2.0
+# black>=21.0
+# flake8>=3.8
+# mypy>=0.800
+
+# Documentation tools (optional)
+# sphinx>=4.0
+# sphinx-rtd-theme>=0.5

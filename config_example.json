@@ -1,0 +1,55 @@
+{
+  "mqtt": {
+    "broker": "mqtt.eclipseprojects.io",
+    "port": 1883,
+    "topic_prefix": "iotkit",
+    "username": null,
+    "password": null,
+    "client_id_prefix": "iotkit_client"
+  },
+  "http": {
+    "base_url": "http://localhost:5000/api",
+    "timeout": 30,
+    "headers": {
+      "Content-Type": "application/json",
+      "User-Agent": "IoTKit/1.0.0"
+    },
+    "auth_token": null
+  },
+  "sensors": {
+    "default_mode": "random",
+    "reading_interval": 2.0,
+    "precision": 2,
+    "temperature": {
+      "min_val": 20.0,
+      "max_val": 30.0,
+      "unit": "°C"
+    },
+    "humidity": {
+      "min_val": 40.0,
+      "max_val": 80.0,
+      "unit": "%"
+    },
+    "pressure": {
+      "min_val": 1000.0,
+      "max_val": 1100.0,
+      "unit": "hPa"
+    }
+  },
+  "logging": {
+    "log_level": "INFO",
+    "log_format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file_format": "csv",
+    "auto_timestamp": true,
+    "log_directory": "logs",
+    "max_file_size": "10MB",
+    "backup_count": 5
+  },
+  "general": {
+    "device_id_prefix": "iotkit_device",
+    "data_retention_days": 30,
+    "batch_size": 10,
+    "enable_ssl": false,
+    "debug_mode": false
+  }
+}
